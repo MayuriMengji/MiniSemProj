@@ -1,3 +1,4 @@
+
 *{
     padding:0;
     margin:0;
@@ -6,10 +7,6 @@
 /*SomethingNew*/
 *:not(i){
     font-family: "poppins", sans-serif;
-}
-
-body{
-    background-color: #ae9cff;
 }
 .container{
     background-color: #ffffff;
@@ -32,13 +29,15 @@ body{
     width: 70%;
     border: none;
     outline: none;
-    border-bottom: 3px solid #ae9cff;
+    border-bottom: 3px solid #211C84;
     font-size: 16px;
 }
 .search-box button{
     padding: 5px 0;
     width: 25%;
-    background-color: #ae9cff;
+    height: 40px;
+    font-size: large;
+    background-color: #211C84;;
     border: none;
     outline: none;
     color: #ffffff;
@@ -58,7 +57,7 @@ body{
 }
 .result button{
     background-color: transparent;
-    color: #ae9cff;
+    color: #211C84;
     border: none;
     outline: none;
     font-size: 18px;
@@ -66,21 +65,69 @@ body{
 .result .details{
     display: flex;
     gap :10px;
-    color:#b3b6d4;
+    color:#4D55CC;
     margin: 5px 0 20px 0;
     font-size: 14px;
 }
-.word-meaning{
+.word-meaning,.word-synonyms,.word-antonyms{
     color: #575a7b;
+    margin:5px;
    
 }
 .word-example{
     background-color: #f7f7f7;
     padding-left: 20px;
-    border-left: 5px solid #ae9cff;
+    border-left: 5px solid #211C84;
     color: #575a7b;
     margin-top: 30px;
     margin-top: 3
     0px;
     font-style: italic;
+}
+.error{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.history {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(38, 33, 61, 0.1);
+}
+
+.history h3 {
+    color: #1f194c;
+    margin-bottom: 10px;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.history li {
+    padding: 5px 0;
+    cursor: pointer;
+    color: #7A73D1;
+    transition: color 0.3s;
+}
+
+.history li:hover {
+    color: #7A73D1;
+    text-decoration: underline;
+}
+
+#clear-history {
+    margin-top: 10px;
+    padding: 5px 10px;
+    height: 40px;
+    background-color: #211C84;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
 }
